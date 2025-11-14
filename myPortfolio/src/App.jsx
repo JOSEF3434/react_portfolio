@@ -187,7 +187,7 @@ function App() {
           <section className="section">
             <h2>Certificates</h2>
             <ul className="list">
-              <li><Link href="https://res.cloudinary.com/dhpfzwhom/raw/upload/v1763073956/ezti5ze9xg80waj8xnoc.pdf" target="_blank" rel="noreferrer">Resume (PDF)</Link></li>
+              <li><Link href="/Yossief_Enyew_cv.pdf" target="_blank" rel="noreferrer">Resume (PDF)</Link></li>
               <li><Link href="/Learn the Latest Tech Skills.PDF" target="_blank" rel="noreferrer">Programming Fundamentals Nanodegree</Link></li>
               <li><Link href="/Transcript .PDF" target="_blank" rel="noreferrer">University Transcript</Link></li>
               <li><Link href="/Approval sheet.PDF" target="_blank" rel="noreferrer">Approval Sheet</Link></li>
