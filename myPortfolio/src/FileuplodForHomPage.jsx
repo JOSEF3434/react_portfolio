@@ -72,14 +72,14 @@ const CloudinaryUpload = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 border rounded-2xl shadow-lg bg-white text-center">
-      <h2 className="text-xl font-semibold mb-4">Upload to Cloudinary</h2>
+    <div className="max-w-md mx-auto mt-10 p-6 border border-slate-200 dark:border-slate-700 rounded-2xl shadow-lg bg-white dark:bg-slate-900 text-center">
+      <h2 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-100">Upload to Cloudinary</h2>
 
       <input
         type="file"
         accept="image/*,video/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,application/zip,application/x-zip-compressed,application/x-7z-compressed,application/x-rar-compressed"
         onChange={handleFileChange}
-        className="mb-4"
+        className="mb-4 block w-full text-sm text-slate-700 dark:text-slate-200 file:mr-4 file:py-2 file:px-3 file:rounded-md file:border file:border-slate-300 file:bg-slate-50 file:text-slate-700 hover:file:bg-slate-100"
       />
 
       {preview ? (
@@ -104,7 +104,7 @@ const CloudinaryUpload = () => {
       <button
         onClick={handleUpload}
         disabled={uploading}
-        className={`px-4 py-2 rounded-lg text-white ${
+        className={`px-4 py-2 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-400 ${
           uploading ? "bg-gray-400" : "bg-blue-600 hover:bg-blue-700"
         }`}
       >
@@ -113,7 +113,7 @@ const CloudinaryUpload = () => {
 
       {uploadedUrl && (
         <div className="mt-6">
-          <p className="text-green-600 font-medium">✅ Uploaded Successfully!</p>
+          <p className="text-green-600 dark:text-green-400 font-medium">✅ Uploaded Successfully!</p>
           {isImage(file.type) ? (
             <img src={uploadedUrl} alt="Uploaded" className="rounded-xl mx-auto w-64 mt-2" />
           ) : isVideo(file.type) ? (
