@@ -85,9 +85,9 @@ const CloudinaryUpload = () => {
       {preview ? (
         <div className="mb-4">
           {isVideo(file.type) ? (
-            <video src={preview} controls className="rounded-xl mx-auto w-64" />
+            <video src={preview} controls className="rounded-xl mx-auto w-full max-w-sm" />
           ) : (
-            <img src={preview} alt="Preview" className="rounded-xl mx-auto w-64" />
+            <img src={preview} alt="Preview" className="rounded-xl mx-auto w-full max-w-sm" />
           )}
         </div>
       ) : file ? (
@@ -122,7 +122,7 @@ const CloudinaryUpload = () => {
             <iframe
               src={uploadedUrl}
               title="PDF Preview"
-              className="rounded-xl mx-auto w-64 h-40 mt-2"
+              className="rounded-xl mx-auto w-full max-w-sm h-64 sm:h-80 mt-2"
             />
           ) : isZip(file.type) ? (
             <Link

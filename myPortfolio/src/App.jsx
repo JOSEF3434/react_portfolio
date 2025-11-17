@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className="container min-h-screen text-slate-800 dark:text-slate-100">
+    <div className="container min-h-screen text-slate-800 dark:text-slate-100 px-4 sm:px-6">
       <div className="topbar mb-4">
         <button
           className="toggle px-3 py-2 rounded-md border shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition"
@@ -31,11 +31,11 @@ function App() {
       </div>
 
       {/* Header */}
-      <header className="header shadow-sm hover:shadow-md transition">
+      <header className="header shadow-sm hover:shadow-md transition flex-col md:flex-row items-start md:items-center">
         <img
           src="https://res.cloudinary.com/dhpfzwhom/image/upload/v1763072413/dtj4wtzscmgjikttmpbj.jpg"
           alt="Profile"
-          className="avatar"
+          className="avatar flex-shrink-0"
         />
         <div>
           <h1 className="title">YOSSIEF ENYEW</h1>
@@ -186,14 +186,30 @@ function App() {
               </ul>
             </div>
             <div>
-              <h3>Final Project — Fteh AI</h3>
+              <Link to = "https://feth-ai-eo3u.onrender.com/">
+              <h3>Final Project — Fteh AI</h3></Link>
               <ul className="list space-y-1.5">
                 <li>
                   AI-based legal adviser and lawyer finder using Gemini API
                 </li>
                 <li>
-                  Advises based on user query, specialization, and location
-                </li>
+                  "A complete MERN stack platform designed to provide AI-powered legal guidance based on Ethiopian law, integrating Google Gemini for advanced legal reasoning.",
+                  "Fully structured legal database storing Civil and Criminal law categories, subclasses, articles, and sub-articles for quick and accurate legal information retrieval.",
+                  "AI system analyzes user scenarios and returns relevant legal articles, defenses, interpretations, and applicable constitutional references.",
+                  "Advanced Lawyer Recommendation Engine using Google Gemini + fallback algorithm that matches users with lawyers based on specialization, location, experience, language, rating, and consultation fees.",
+                  "Real-time chat system using Socket.io with full media support including images, videos, audio messages, documents, and voice recording directly from the microphone.",
+                  "Consultation booking and scheduling system allowing users to book and pay for legal sessions with lawyers.",
+                  "Integrated Chapa Payment Gateway for secure online payments for lawyer consultations and services.",
+                  "Role-based dashboards for Users, Lawyers, Managers, and Admins with different access permissions and features.",
+                  "Responsive and modern UI built with React Vite and Tailwind CSS, including query forms, article search filters, lawyer profiles, and admin management panels.",
+                  "Cloudinary integration for secure storage of profile pictures, legal documents, and media uploaded during chat.",
+                  "Authentication and authorization using JWT, including profile management and secure session handling.",
+                  "AI-powered article search in Query Component using Type, Subclass, Language, and Location filters.",
+                  "Backend built with Express.js following modular structure (Models, Controllers, Routes) ensuring scalability.",
+                  "Database designed with full normalization, storing legal data, lawyer profiles, chat messages, bookings, payments, and AI logs.",
+                  "Admin tools to manage lawyers, users, legal content, bookings, transactions, and system monitoring.",
+                  "Designed as a full academic final-year project for Haramaya University IT Department, demonstrating expertise in AI, MERN, and professional system architecture."
+                 </li>
               </ul>
             </div>
             <div>
