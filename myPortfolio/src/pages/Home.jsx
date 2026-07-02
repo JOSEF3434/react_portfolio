@@ -1,35 +1,27 @@
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Skills from '../components/Skills';
-import Experience from '../components/Experience';
-import Projects from '../components/Projects';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
-import { Helmet } from 'react-helmet-async';
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
+import Skills from "../components/sections/Skills";
+import Projects from "../components/sections/Projects";
+import Experience from "../components/sections/Experience";
+import Certifications from "../components/sections/Certifications";
+import Contact from "../components/sections/Contact";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/layout/SEO";
 
-const Home = ({ theme, toggleTheme }) => {
+const Home = () => {
   return (
-    <div className="bg-white dark:bg-slate-900 min-h-screen transition-colors duration-300">
-      <Helmet>
-        <title>Yossief Enyew | Full Stack Developer</title>
-        <meta name="description" content="Portfolio of Yossief Enyew, a Full Stack Developer specializing in MERN stack, React, and modern web technologies." />
-        <meta name="keywords" content="Yossief Enyew, Full Stack Developer, React Developer, MERN Stack, Portfolio" />
-      </Helmet>
-      
-      <Navbar theme={theme} toggleTheme={toggleTheme} />
-      
-      <main>
+    <Layout>
+      <SEO description="Portfolio of Yossief Enyew — Full Stack Developer specializing in React, Next.js, Node.js, and AI-powered web applications." />
+      <main id="main-content">
         <Hero />
         <About />
         <Skills />
         <Projects />
         <Experience />
+        <Certifications />
         <Contact />
       </main>
-      
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

@@ -46,13 +46,6 @@ const CloudinaryUpload = () => {
 
     try {
       // Choose Cloudinary resource type based on selected file
-      const type = file.type || "";
-      const resourceType = isImage(type)
-        ? "image"
-        : isVideo(type)
-        ? "video"
-        : "raw"; // PDFs, docs, and other files
-
       const res = await fetch(
         `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/auto/upload`,
         {
